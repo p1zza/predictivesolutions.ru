@@ -1,0 +1,39 @@
+﻿<Window x:Class="predictivesolutions.ru.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:predictivesolutions.ru"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="446.565" Width="500">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="33*" />
+            <RowDefinition Height="175*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <ListBox Name ="NameList" Grid.Row="1" Grid.Column="0" />
+        <ListBox Name ="DepartmentList" Grid.Row="1" Grid.Column="1" >
+
+        </ListBox>
+        <ListBox Name ="GenderList" Grid.Row="1" Grid.Column="2" >
+        </ListBox>
+        <ComboBox  Name ="Department" HorizontalAlignment= "Center" Text="Department" Margin="33,18,31,0" VerticalAlignment="Top" 
+                   Width="100" Grid.Column="1" Height="29" SelectionChanged="Department_SelectionChanged">
+            <ListBox Width="90">
+                <CheckBox>
+
+                </CheckBox>
+            </ListBox>
+            
+        </ComboBox>
+            <TextBlock Text="Name" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Margin="-1,18,163,18" Width="166" TextAlignment="Center" RenderTransformOrigin="0.494,0.222" Grid.ColumnSpan="2"/>
+        <TextBlock Text="Gender" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Margin="163,18,-1,18" Width="166" TextAlignment="Center" Grid.ColumnSpan="2"/>
+
+        <Button Content="Отсортировать от А до Я" x:Name ="Sort" Margin="4,44,0,2" Click="Sort_Click"/>
+    </Grid>
+</Window>

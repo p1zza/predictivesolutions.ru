@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Users>
+  <User Name="Алексеев Иван" Department="Отдел ИТ" Gender="male"></User>
+  <User Name="Иванов Семен" Department="Бухгалтерия" Gender="male"></User>
+  <User Name="Петрова Дарья" Department="Бухгалтерия" Gender="female"></User>
+  <User Name="Лебедев Антон" Department="Отдел HR" Gender="male"></User>
+  <User Name="Васильева Анна" Department="Отдел ИТ" Gender="female"></User>
+</Users>
