@@ -118,7 +118,7 @@ namespace predictivesolutions.ru
         {
             string ChoosedDepartment = Department.SelectedValue.ToString();
             FlushList(NameList);
-            FlushList(DepartmentList);
+            FlushList(DepartmentList); 
             FlushList(GenderList);
                 foreach (XmlNode xmlNode in xRoot)
                 {
