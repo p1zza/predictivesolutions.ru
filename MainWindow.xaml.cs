@@ -52,7 +52,7 @@ namespace predictivesolutions.ru
                     person.Name = xmlNode.Attributes.GetNamedItem("Name").Value;
                     NameList.Items.Add(person.Name);
                     person.Department = xmlNode.Attributes.GetNamedItem("Department").Value;
-                    DepartmentList.Items.Add(person.Department);
+                    Department.Items.Add(person.Department);
                     person.Gender = xmlNode.Attributes.GetNamedItem("Gender").Value;
                     Gndrs.Add(person.Gender);
                 }

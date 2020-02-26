@@ -23,13 +23,17 @@
         <ListBox Name ="GenderList" Grid.Row="1" Grid.Column="2" >
         </ListBox>
         <ComboBox  Name ="Department" HorizontalAlignment= "Center" Text="Department" Margin="33,18,31,0" VerticalAlignment="Top" 
-                   Width="100" Grid.Column="1" Height="29" SelectionChanged="Department_SelectionChanged">
-            <ListBox Width="90">
-                <CheckBox>
-
-                </CheckBox>
-            </ListBox>
-            
+                   Width="100" Grid.Column="1" Height="29">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <CheckBox IsChecked="{Binding IsSelected}"
+                       Width="20" />
+                        <TextBlock Text="{Binding DayOfWeek}"
+                       Width="100" />
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
         </ComboBox>
             <TextBlock Text="Name" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Margin="-1,18,163,18" Width="166" TextAlignment="Center" RenderTransformOrigin="0.494,0.222" Grid.ColumnSpan="2"/>
         <TextBlock Text="Gender" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Margin="163,18,-1,18" Width="166" TextAlignment="Center" Grid.ColumnSpan="2"/>
